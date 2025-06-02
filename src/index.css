@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-white dark:bg-navy text-gray-900 dark:text-slate-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+  
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md shadow-sm transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-teal hover:bg-teal/90 text-navy font-semibold;
+  }
+  
+  .btn-outline {
+    @apply border-teal hover:bg-teal/10 text-teal;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-navy-light rounded-xl shadow-md dark:shadow-none overflow-hidden transition duration-300;
+  }
+  
+  .section-heading {
+    @apply text-3xl font-bold mb-8 text-gray-900 dark:text-white flex items-center;
+  }
+  
+  .section-heading::before {
+    content: '';
+    @apply w-12 h-1 bg-teal rounded-full mr-4 inline-block;
+  }
+  
+  .timeline-item {
+    @apply relative pl-10 pb-10 border-l-2 border-gray-200 dark:border-gray-700;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-teal border-4 border-white dark:border-navy-light;
+  }
+  
+  .timeline-item:last-child {
+    @apply border-l-0 pb-0;
+  }
+  
+  .skill-badge {
+    @apply px-3 py-1 rounded-full bg-gray-100 dark:bg-navy-light text-sm font-medium text-gray-800 dark:text-gray-300 mr-2 mb-2;
+  }
+  
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-teal relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-teal transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .nav-link.active {
+    @apply text-teal;
+  }
+  
+  .nav-link.active::after {
+    @apply w-full;
+  }
+  
+  .project-card {
+    @apply relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .project-card:hover .project-overlay {
+    @apply opacity-100;
+  }
+  
+  .project-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 to-black/30 flex items-end opacity-0 hover:opacity-100 transition-opacity duration-300 p-6;
+  }
+}
