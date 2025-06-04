@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
     },
     {
       name: 'Frameworks & Libraries',
-      skills: ['Django', 'FastAPI', 'Flask', 'Scikit-Learn', 'OpenCV', 'django-rest-framework', 'go-chi'],
+      skills: ['Django', 'FastAPI', 'Flask', 'Scikit-Learn', 'OpenCV', 'django-rest-framework', 'go-chi', 'numpy', 'pandas'],
     },
     {
       name: 'Databases',
