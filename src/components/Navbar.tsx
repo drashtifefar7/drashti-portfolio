@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a 
-            href="/resume.pdf" 
+            href="/DrashtiFefarResume.pdf" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-outline border-teal text-teal hover:bg-teal/10"
