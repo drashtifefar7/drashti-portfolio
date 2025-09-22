@@ -30,9 +30,19 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: 'Associate Software Engineer',
+      title: 'Software Engineer',
+      company: 'Slikk',
+      period: 'September 2025 - Present',
+      description: [
+        'Took end-to-end ownership of designing and implementing a logistics microservice.',
+        'Implemented AWS Lambda functions to process product images asynchronously in the background.'
+      ],
+      skills: ['Django', 'AWS Lambda', 'AWS SQS', 'PostgreSQL', 'PIL'],
+    },
+    {
+      title: 'Software Engineer',
       company: 'Atheer Labs',
-      period: 'April 2024 - Present',
+      period: 'April 2024 - August 2025',
       description: [
         'Developed an aggregator app from scratch, integrating the functionalities of Pronto and Atheer products.',
         'Developed a customer support portal to streamline internal task workflows.',
